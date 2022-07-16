@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<script src="js/testCrud.js"></script>
+    <title>Quizz</title>
+  </head>
+  <body id="body">
+    
+  <h1>Test de l'API serveur</h1>
+
+
+  <h2>HTTP pour obtenir les taches - avec parametre : </h2>
+
+  List des taches a faire ( to do ) </br> </br>
+  <li>
+   click to get task to do <button onclick="gettodo();">get To do </button>
+  </li>
+  <ul id="todoTask"></ul>
+  <li>
+    click to get task to do <button onclick="getinprogress();">get inprogress </button>
+  </li>
+  <ul id="inprogress"></ul>
+  <li>
+    click to get task to do <button onclick="getTaskdone();"> get done</button>
+  </li>
+ <ul id="doneTask"></ul>
+
+
+
+ <h2>HTTP pour ajouter une tache : </h2>
+
+ note : une tache ajouter a un status "todo" par defaut </br>
+ 
+ <label> nom de la tache :</label>
+ <input type="text" id="nameTask">  </input></br>
+ <label> discription de la tache :</label>
+ <input type="textarea" id="descTask">  </input>  </br>
+
+
+<button onclick="addtask()">Ajouter tache</button>
+
+
+<h2>HTTP pour la mise a jour d'une tache : </h2>
+<label> Le nom de la tache :</label>
+ <input type="text" id="nameTasktoupdate">  </input>  </br>
+ <select name="status" id="status">
+    <option value="todo">todo</option>
+    <option value="inprogress">inprogress</option>
+    <option value="done">done</option>
+   
+  </select>
+
+<button onclick="updatetask()">update status</button>
+
+
+
+<h2>HTTP pour la supression d'une tache : </h2>
+<label> Le nom de la tache :</label>
+ <input type="text" id="nameTasktodelete">  </input>  </br>
+ 
+
+<button onclick="deletetask()">delete tache</button>
+  </body>
+</html>
