@@ -1,4 +1,4 @@
-# Todolist test
+# Todolist API
  CRUDServerNode
 
 Dans cet exemple j'ai simulé les appelles des API par ajax.
